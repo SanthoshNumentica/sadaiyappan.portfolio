@@ -14,7 +14,7 @@ export function Header() {
             <a href="#about" className="text-gray-700 hover:text-indigo-600">About</a>
             <a href="#experience" className="text-gray-700 hover:text-indigo-600">Experience</a>
             <a href="#projects" className="text-gray-700 hover:text-indigo-600">Projects</a>
-            <a href="#contact" className="text-gray-700 hover:text-indigo-600">Contact</a>
+            <a href="#certifications" className="text-gray-700 hover:text-indigo-600">Certifications</a>
           </nav>
           <div className="flex items-center space-x-4">
             <a href="https://github.com/SanthoshNumentica" target="_blank" rel="noopener noreferrer">
