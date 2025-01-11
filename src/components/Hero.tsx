@@ -11,8 +11,7 @@ export function Hero() {
               Tech Lead & Senior Full Stack Developer
             </h1>
             <p className="text-xl text-gray-600">
-              Building scalable solutions and leading high-performance teams with 10+ years of experience
-              in full-stack development.
+            Proven leader in API development with over 5 years of experience managing a team of developers. Expertise in overseeing the complete API lifecycle, ensuring high performance, and optimizing integrations for secure data handling. Committed to client success and continuous learning, with a focus on mentoring junior developers and enhancing skills in full-stack application development.
             </p>
             <div className="flex space-x-4">
               <a

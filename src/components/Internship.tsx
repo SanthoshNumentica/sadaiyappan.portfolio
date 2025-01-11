@@ -1,28 +1,21 @@
 import React from 'react';
 import { Briefcase, Building2 } from 'lucide-react';
 
-export function Experience() {
+export function Interships() {
   const experiences = [
     {
       company: "ITOI Technologies",
-      role: "Tech Lead | Mern Stack Develper",
-      period: "2019 - Present",
-      description: "Leading a team of 12 developers, architecting cloud-native solutions, and implementing agile methodologies.",
+      role: "Backend Developer Intern",
+      period: "JUNE 2019 - OCT 2019",
+      description: "Learned API's",
       technologies: ["React", "Node.js", "AWS", "MongoDB"]
-    },
-    {
-      company: "Flipkart",
-      role: "System Engineer",
-      period: "2018 - 2019",
-      description: "Troubleshooting and Automation: Expertise in diagnosing system issues and automating routine tasks to improve operational efficiency and reduce downtime.",
-      technologies: ["Microsoft Office,Tally"]
     }
   ];
 
   return (
     <section id="experience" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Experience</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Internship</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition">

@@ -17,13 +17,13 @@ export function Header() {
             <a href="#contact" className="text-gray-700 hover:text-indigo-600">Contact</a>
           </nav>
           <div className="flex items-center space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/SanthoshNumentica" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 text-gray-700 hover:text-indigo-600" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sadaiyappan-subramani-7186a61b1/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 text-gray-700 hover:text-indigo-600" />
             </a>
-            <a href="mailto:john@example.com">
+            <a href="mailto:sadaiyappancse@gmail.com">
               <Mail className="h-5 w-5 text-gray-700 hover:text-indigo-600" />
             </a>
           </div>
