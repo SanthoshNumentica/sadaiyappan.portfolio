@@ -8,7 +8,7 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-indigo-600" />
-            <span className="font-bold text-xl">John Developer</span>
+            <span className="font-bold text-xl">Sadaiyappan Subramani</span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-700 hover:text-indigo-600">About</a>

@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Terminal className="h-6 w-6 text-indigo-400" />
-            <span className="font-bold text-xl">John Developer</span>
+            <span className="font-bold text-xl">Sadaiyappan Subramani</span>
           </div>
           <div className="flex space-x-6">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">
@@ -23,7 +23,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} John Developer. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Sadaiyappan Subramani. All rights reserved.</p>
         </div>
       </div>
     </footer>
