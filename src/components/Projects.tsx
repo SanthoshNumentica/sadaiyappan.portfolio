@@ -6,28 +6,28 @@ export function Projects() {
     {
       title: "Tele Doctor",
       description: "Currently developing a web application connecting rural individuals with medical consultations",
-      image: "src/images/tele.png",
+      image: "images/tele.png",
       technologies: ["Next.js", "Nest.js", "Postgre SQL","Agile Methododlogy"],
       live: "https://teledoctor.life",
     },
     {
       title: "Give Charity",
       description: "Developed a web application aimed at facilitating charitable donations and managing donor accounts",
-      image: "src/images/give_charity.png",
+      image: "images/give_charity.png",
       technologies: ["Angular", "Nest.js", "Razorpay", "MongoDB"],
       live: "https://givecharity.org",
     },
     {
       title: "Career Journey",
       description: "Developed a web application to assist users in navigating and growing their IT careers",
-      image: "src/images/career_journey.png",
+      image: "images/career_journey.png",
       technologies: ["Angular", "Nest.js", "MongoDB","Agile Methododlogy"],
       live: "https://careerjourney.org",
     },
     {
       title: "Whatsapp Sender",
       description: "Developed a web application to manage many whatsapp with features",
-      image: "src/images/wasender.png",
+      image: "images/wasender.png",
       technologies: ["React", "Nest.js", "mySQL","Agile Methododlogy"],
       live: "https://acs.agoo.in",
     }
