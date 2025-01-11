@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import { FaJsSquare } from 'react-icons/fa'; // JavaScript logo
 import { SiTypescript, SiPython, SiReact, SiNodedotjs, SiAmazon } from 'react-icons/si'; // Other logos
 import { FaUsers, FaClipboardCheck, FaLightbulb, FaComments, FaSync, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Icons for soft skills and dropdown
-import StarRating from './star.tsx';
 
 const Skills = () => {
   const [isTechnicalOpen, setTechnicalOpen] = useState(false);
@@ -16,13 +15,13 @@ const Skills = () => {
   const toggleSoft = () => setSoftOpen(!isSoftOpen);
 
   const technicalSkills = [
-    { id: 1, skill: 'JavaScript', level: 5, icon: <FaJsSquare className="h-6 w-6 inline mr-2" /> },
-    { id: 2, skill: 'TypeScript', level: 4, icon: <SiTypescript className="h-6 w-6 inline mr-2" /> },
-    { id: 3, skill: 'Java', level: 3, icon: <span className="h-6 w-6 inline mr-2">☕</span> }, // Using a coffee emoji as a placeholder for Java
-    { id: 4, skill: 'Python', level: 4, icon: <SiPython className="h-6 w-6 inline mr-2" /> },
-    { id: 5, skill: 'React', level: 5, icon: <SiReact className="h-6 w-6 inline mr-2" /> },
-    { id: 6, skill: 'Node.js', level: 5, icon: <SiNodedotjs className="h-6 w-6 inline mr-2" /> },
-    { id: 7, skill: 'AWS', level: 4, icon: <SiAmazon className="h-6 w-6 inline mr-2" /> },
+    { id: 1, skill: 'JavaScript', icon: <FaJsSquare className="h-6 w-6 inline mr-2" /> },
+    { id: 2, skill: 'TypeScript', icon: <SiTypescript className="h-6 w-6 inline mr-2" /> },
+    { id: 3, skill: 'Java', icon: <span className="h-6 w-6 inline mr-2">☕</span> }, // Using a coffee emoji as a placeholder for Java
+    { id: 4, skill: 'Python', icon: <SiPython className="h-6 w-6 inline mr-2" /> },
+    { id: 5, skill: 'React', icon: <SiReact className="h-6 w-6 inline mr-2" /> },
+    { id: 6, skill: 'Node.js', icon: <SiNodedotjs className="h-6 w-6 inline mr-2" /> },
+    { id: 7, skill: 'AWS', icon: <SiAmazon className="h-6 w-6 inline mr-2" /> },
     // Add more skills as needed
   ];
 
@@ -56,13 +55,12 @@ const Skills = () => {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className="grid grid -cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
               {technicalSkills.map((skill) => (
                 <div key={skill.id} className="p-4 border border-gray-300 rounded-lg bg-white shadow-md flex items-center">
                   {skill.icon}
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-800">{skill.skill}</h3>
-                    <StarRating rating={skill.level} />
                   </div>
                 </div>
               ))}
