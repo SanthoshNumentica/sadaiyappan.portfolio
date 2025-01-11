@@ -1,31 +1,35 @@
-import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
 
 export function Projects() {
   const projects = [
     {
-      title: "Enterprise Cloud Platform",
-      description: "Scalable cloud management platform handling 1M+ daily requests",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      technologies: ["React", "Node.js", "AWS", "Kubernetes"],
-      github: "https://github.com",
-      live: "https://example.com"
+      title: "Tele Doctor",
+      description: "Currently developing a web application connecting rural individuals with medical consultations",
+      image: "src/images/tele.png",
+      technologies: ["Next.js", "Nest.js", "Postgre SQL","Agile Methododlogy"],
+      live: "https://teledoctor.life",
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Real-time analytics platform with machine learning capabilities",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      technologies: ["Python", "TensorFlow", "React", "PostgreSQL"],
-      github: "https://github.com",
-      live: "https://example.com"
+      title: "Give Charity",
+      description: "Developed a web application aimed at facilitating charitable donations and managing donor accounts",
+      image: "src/images/give_charity.png",
+      technologies: ["Angular", "Nest.js", "Razorpay", "MongoDB"],
+      live: "https://givecharity.org",
     },
     {
-      title: "Microservices Architecture",
-      description: "Distributed system handling high-throughput financial transactions",
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      technologies: ["Go", "Docker", "Kafka", "MongoDB"],
-      github: "https://github.com",
-      live: "https://example.com"
+      title: "Career Journey",
+      description: "Developed a web application to assist users in navigating and growing their IT careers",
+      image: "src/images/career_journey.png",
+      technologies: ["Angular", "Nest.js", "MongoDB","Agile Methododlogy"],
+      live: "https://careerjourney.org",
+    },
+    {
+      title: "Whatsapp Sender",
+      description: "Developed a web application to manage many whatsapp with features",
+      image: "src/images/wasender.png",
+      technologies: ["React", "Nest.js", "mySQL","Agile Methododlogy"],
+      live: "https://acs.agoo.in",
     }
   ];
 
@@ -35,7 +39,10 @@ export function Projects() {
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <div
+              key={index}
+              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition"
+            >
               <img
                 src={project.image}
                 alt={project.title}
@@ -55,15 +62,6 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="mt-4 flex space-x-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-gray-600 hover:text-indigo-600"
-                  >
-                    <Github className="h-5 w-5 mr-1" />
-                    Code
-                  </a>
                   <a
                     href={project.live}
                     target="_blank"
