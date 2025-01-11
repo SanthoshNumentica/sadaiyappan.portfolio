@@ -8,7 +8,7 @@ import { SiTypescript, SiPython, SiReact, SiNodedotjs, SiAmazon } from 'react-ic
 import { FaUsers, FaClipboardCheck, FaLightbulb, FaComments, FaSync, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Icons for soft skills and dropdown
 import StarRating from './star';
 
-const SkillsDropdown = () => {
+const Skills = () => {
   const [isTechnicalOpen, setTechnicalOpen] = useState(false);
   const [isSoftOpen, setSoftOpen] = useState(false);
 
@@ -102,4 +102,4 @@ const SkillsDropdown = () => {
   );
 };
 
-export default SkillsDropdown;
+export default Skills;
