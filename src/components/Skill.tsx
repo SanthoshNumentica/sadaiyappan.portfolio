@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { FaJsSquare } from 'react-icons/fa'; // JavaScript logo
 import { SiTypescript, SiPython, SiReact, SiNodedotjs, SiAmazon } from 'react-icons/si'; // Other logos
 import { FaUsers, FaClipboardCheck, FaLightbulb, FaComments, FaSync, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Icons for soft skills and dropdown
-import StarRating from './star';
+import StarRating from './star.tsx';
 
 const Skills = () => {
   const [isTechnicalOpen, setTechnicalOpen] = useState(false);
