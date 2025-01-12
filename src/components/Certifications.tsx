@@ -8,19 +8,34 @@ export function Certifications() {
       credential: "https://drive.google.com/drive/folders/1f8iQ335rpPBszLV60YCEr7Sw7q_PrRJf?usp=sharing",
       organization: "Microsoft",
       date: "January 2025",
-      image: "images/365.png", // Replace with your actual image path
-      description: "This certification demonstrates proficiency in data analysis, machine learning, and statistical modeling.",
+      image: "images/365.png",
+      description: "This certification demonstrates proficiency in developing, implementing, and optimizing solutions using Microsoft 365 technologies.",
     },
     {
-      name: "Merrn Stack Developer",
+      name: "MERN Stack Developer",
       credential: "https://www.udemy.com/certificate/UC-2d4760ad-0e9a-462c-be2b-7f5dae7f6c0a/",
       organization: "Udemy",
       date: "December 2024",
-      image: "images/mern.jpg", // eplace with your actual image path
-      description: "The PMP certification validates the skills and knowledge necessary to lead and direct projects.",
+      image: "images/mern.jpg",
+      description: "This certification validates expertise in building modern, full-stack web applications using MongoDB, Express.js, React, and Node.js.",
+    },
+    {
+      name: "REST API Developer",
+      credential: "https://www.hackerrank.com/certificates/c012d9db96eb",
+      organization: "Hacker Rank",
+      date: "July 2024",
+      image: "images/rest_api.png",
+      description: "This certification showcases skills in designing, building, and consuming RESTful APIs to support scalable and secure application development.",
+    },
+    {
+      name: "SQL Advanced",
+      credential: "https://www.hackerrank.com/certificates/8164f28ede5e",
+      organization: "Hacker Rank",
+      date: "July 2024",
+      image: "images/sql.png",
+      description: "This certification highlights advanced SQL skills, including data querying, optimization, and management for complex databases.",
     },
   ];
-
   return (
     <section id="certifications" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

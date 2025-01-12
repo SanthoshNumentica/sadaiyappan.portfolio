@@ -1,11 +1,7 @@
-// src/components/SkillsDropdown.tsx
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
-// Import logos
-import { FaJsSquare } from 'react-icons/fa'; // JavaScript logo
-import { SiTypescript, SiPython, SiReact, SiNodedotjs, SiAmazon } from 'react-icons/si'; // Other logos
-import { FaUsers, FaClipboardCheck, FaLightbulb, FaComments, FaSync, FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Icons for soft skills and dropdown
+import { useState } from 'react';
+import { FaChevronDown, FaChevronUp, FaClipboardCheck, FaCommentsDollar, FaJsSquare, FaLightbulb, FaSync, FaUsers } from 'react-icons/fa'; // JavaScript logo
+import { Si365Datascience, SiAmazon, SiBuymeacoffee, SiCodeigniter, SiLaravel, SiNodedotjs, SiPython, SiReact, SiTypescript } from 'react-icons/si'; // Other logos
 
 const Skills = () => {
   const [isTechnicalOpen, setTechnicalOpen] = useState(false);
@@ -17,35 +13,33 @@ const Skills = () => {
   const technicalSkills = [
     { id: 1, skill: 'JavaScript', icon: <FaJsSquare className="h-6 w-6 inline mr-2" /> },
     { id: 2, skill: 'TypeScript', icon: <SiTypescript className="h-6 w-6 inline mr-2" /> },
-    { id: 3, skill: 'Java', icon: <span className="h-6 w-6 inline mr-2">☕</span> }, // Using a coffee emoji as a placeholder for Java
+    { id: 3, skill: 'Java', icon: <SiBuymeacoffee className="h-6 w-6 inline mr-2" /> },
     { id: 4, skill: 'Python', icon: <SiPython className="h-6 w-6 inline mr-2" /> },
     { id: 5, skill: 'React', icon: <SiReact className="h-6 w-6 inline mr-2" /> },
     { id: 6, skill: 'Node.js', icon: <SiNodedotjs className="h-6 w-6 inline mr-2" /> },
     { id: 7, skill: 'AWS', icon: <SiAmazon className="h-6 w-6 inline mr-2" /> },
-    // Add more skills as needed
+    { id: 8, skill: 'Microsoft 365', icon: <Si365Datascience className="h-6 w-6 inline mr-2" /> },
+    { id: 9, skill: 'PHP - Codeigniter', icon: <SiCodeigniter className="h-6 w-6 inline mr-2" /> },
+    { id: 10, skill: 'PHP - Laravel', icon: <SiLaravel className="h-6 w-6 inline mr-2" /> },
   ];
 
   const softSkills = [
-    { id: 1, skill: 'Team Leadership & Mentorship', icon: <FaUsers className="h-6 w-6 inline mr-2" /> },
-    { id: 2, skill: 'Agile/Scrum Project Management', icon: <FaClipboardCheck className="h-6 w-6 inline mr-2" /> },
-    { id: 3, skill: 'Problem-Solving & Analytical Thinking', icon: <FaLightbulb className="h-6 w-6 inline mr-2" /> },
-    { id: 4, skill: 'Effective Communication', icon: <FaComments className="h-6 w-6 inline mr-2" /> },
-    { id: 5, skill: 'Adaptability & Continuous Learning', icon: <FaSync className="h-6 w-6 inline mr-2" /> },
-    // Add more skills as needed
+    { id: 1, skill: 'Team Leadership', icon: <FaUsers className="h-6 w-6 inline mr-2" /> },
+    { id: 2, skill: 'Project Management', icon: <FaClipboardCheck className="h-6 w-6 inline mr-2" /> },
+    { id: 3, skill: 'Problem-Solving', icon: <FaLightbulb className="h-6 w-6 inline mr-2" /> },
+    { id: 4, skill: 'Communication', icon: <FaCommentsDollar className="h-6 w-6 inline mr-2" /> },
+    { id: 5, skill: 'Adaptability', icon: <FaSync className="h-6 w-6 inline mr-2" /> },
   ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h2 className="text-3xl font-bold text-gray-900 mb-4">My Skills</h2>
 
-      {/* Skills Dropdowns */}
       <div className="flex flex-col md:flex-row justify-between mb-4">
-        {/* Technical Skills Dropdown */}
         <div className="flex-1 mb-2 md:mb-0">
           <button
             onClick={toggleTechnical}
-            className="w-full text-left bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-300 transition flex items-center justify-between"
-          >
+            className="w-full text-left bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-300 transition flex items-center justify-between">
             <span>Technical Skills</span>
             {isTechnicalOpen ? <FaChevronUp /> : <FaChevronDown />}
           </button>
@@ -67,8 +61,6 @@ const Skills = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Soft Skills Dropdown */}
         <div className="flex-1">
           <button
             onClick={toggleSoft}
