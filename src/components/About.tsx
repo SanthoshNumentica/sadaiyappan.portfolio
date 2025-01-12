@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import DocumentIcon from '@mui/icons-material/Description';
 import { FaWhatsapp, FaEnvelope, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export function About() {
@@ -62,6 +63,38 @@ export function About() {
                 View Projects
               </a>
             </div>
+            <div className="left mt-6">
+              <button
+                onClick={() => window.open("https://drive.google.com/drive/folders/1DbN-cPF2THPedLd30EehIICl_ynItoza?usp=sharing", "_blank")}
+                className="inline-flex items-center px-6 py-3 bg-[#9B1B30] text-white rounded-lg hover:bg-[#B8293D] transition duration-300 ease-in-out blink-button"
+              >
+                Resume & CV
+                <DocumentIcon className="ml-2 h-5 w-5" />
+              </button>
+            </div>
+
+
+            <style jsx>{`
+  @keyframes blink {
+    0% {
+      opacity: 1;
+      background-color: #4c51bf; /* Indigo color */
+    }
+    50% {
+      opacity: 0.5;
+      background-color: #7f8bf5; /* Light Indigo color */
+    }
+    100% {
+      opacity: 1;
+      background-color: #4c51bf; /* Indigo color */
+    }
+  }
+
+  .blink-button {
+    animation: blink 1.5s infinite;
+  }
+`}</style>
+
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0">
             <img
@@ -92,7 +125,7 @@ export function About() {
                 <FaEnvelope size={30} />
               </button>
               <button
-                onClick={() => handleSelectPlatform ('linkedin')}
+                onClick={() => handleSelectPlatform('linkedin')}
                 className="text-blue-700 hover:text-blue-800 mb-2"
               >
                 <FaLinkedin size={30} />
