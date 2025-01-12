@@ -76,36 +76,36 @@ export function About() {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-6 rounded-lg w-1/3">
+          <div className="bg-white p-6 rounded-lg w-11/12 sm:w-1/3">
             <h2 className="text-lg mb-4 text-center">Contact us through:</h2>
-            <div className="flex space-x-6 justify-center mb-4">
+            <div className="flex flex-wrap justify-center mb-4 space-x-4">
               <button
                 onClick={() => handleSelectPlatform('whatsapp')}
-                className="text-green-500 hover:text-green-600"
+                className="text-green-500 hover:text-green-600 mb-2"
               >
                 <FaWhatsapp size={30} />
               </button>
               <button
                 onClick={() => handleSelectPlatform('email')}
-                className="text-blue-500 hover:text-blue-600"
+                className="text-blue-500 hover:text-blue-600 mb-2"
               >
                 <FaEnvelope size={30} />
               </button>
               <button
-                onClick={() => handleSelectPlatform('linkedin')}
-                className="text-blue-700 hover:text-blue-800"
+                onClick={() => handleSelectPlatform ('linkedin')}
+                className="text-blue-700 hover:text-blue-800 mb-2"
               >
                 <FaLinkedin size={30} />
               </button>
               <button
                 onClick={() => handleSelectPlatform('instagram')}
-                className="text-pink-500 hover:text-pink-600"
+                className="text-pink-500 hover:text-pink-600 mb-2"
               >
                 <FaInstagram size={30} />
               </button>
               <button
                 onClick={() => handleSelectPlatform('facebook')}
-                className="text-blue-600 hover:text-blue-700"
+                className="text-blue-600 hover:text-blue-700 mb-2"
               >
                 <FaFacebook size={30} />
               </button>
