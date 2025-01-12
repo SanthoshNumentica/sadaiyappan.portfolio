@@ -24,6 +24,7 @@ export function Experience() {
         "Implemented CI/CD pipelines to streamline deployment processes and improve release cycles."
       ],
       technologies: [
+        "Power BI",
         "React", 
         "Node.js", 
         "AWS", 

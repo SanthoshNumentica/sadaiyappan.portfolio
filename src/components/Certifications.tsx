@@ -4,6 +4,14 @@ import React from "react";
 export function Certifications() {
   const certifications = [
     {
+      "name": "Microsoft Power BI Desktop for Business Intelligence",
+      "credential": "https://www.udemy.com/certificate/UC-657bec8f-c61d-4fc7-810d-21472de5bec1",
+      "organization": "Udemy",
+      "date": "January 2025",
+      "image": "images/power_bi.jpg",
+      "description": "This certification showcases expertise in utilizing Microsoft Power BI Desktop to analyze data, create insightful reports, and make data-driven business decisions effectively."
+    },
+    {
       name: "Microsoft 365 Certified Developer",
       credential: "https://drive.google.com/drive/folders/1f8iQ335rpPBszLV60YCEr7Sw7q_PrRJf?usp=sharing",
       organization: "Microsoft",

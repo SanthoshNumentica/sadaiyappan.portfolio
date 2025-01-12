@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  FaChartBar,
   FaClipboardCheck,
   FaClock,
   FaCommentsDollar,
@@ -33,6 +34,7 @@ const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
   const technicalSkills = [
+    { id: 1, skill: 'Power BI', icon: <FaChartBar className="h-6 w-6 inline mr-2 text-yellow-500" />,  description: 'Created dynamic dashboards and reports for data analysis and visualization.'},
     { id: 1, skill: 'JavaScript', icon: <FaJsSquare className="h-6 w-6 inline mr-2 text-yellow-500" />, description: 'Used extensively in frontend and backend development, including building dynamic web applications.' },
     { id: 2, skill: 'TypeScript', icon: <SiTypescript className="h-6 w-6 inline mr-2 text-blue-600" />, description: 'Implemented in projects to enhance type safety and scalability in complex applications.' },
     { id: 3, skill: 'Java', icon: <SiBuymeacoffee className="h-6 w-6 inline mr-2 text-red-600" />, description: 'Developed backend APIs and enterprise-level applications using Java.' },
