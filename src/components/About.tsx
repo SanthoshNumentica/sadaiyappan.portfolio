@@ -65,7 +65,7 @@ export function About() {
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0">
             <img
-              src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="images/photo.jpg"
               alt="Developer workspace"
               className="rounded-lg shadow-xl transition-transform duration-500 ease-in-out transform hover:scale-105"
             />
