@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Building2 } from "lucide-react"; // Ensure Building2 is imported
 
 export function Experience() {
   const [isOpen, setIsOpen] = useState<number | null>(null); // Set the type as number or null for toggling
@@ -9,9 +8,10 @@ export function Experience() {
       company: "ITOI Technologies",
       role: "Tech Lead | Mern Stack Developer",
       period: "2019 - Present",
+      image: "/images/itoi.png", // Replace with the actual path to your image
       description: [
         "Dedicated Team Lead and Product Engineer with over <span class='font-bold'>5 years</span> of full-stack development experience.",
-        "Passionate about creating <span class='font-bold'>innovative solutions </span> and <span class='font-bold'>delivering high-quality products.</span",
+        "Passionate about creating <span class='font-bold'>innovative solutions</span> and <span class='font-bold'>delivering high-quality products.</span>",
         "Expertise in API design and implementation within the Node.js ecosystem.",
         "Proven track record of leading teams to success while fostering collaboration and productivity.",
         "API Design and Development: Specialized in creating well-structured, user-friendly, and documented APIs.",
@@ -19,18 +19,52 @@ export function Experience() {
         "Focused on seamless integration with third-party services and improving developer experience.",
         "Leadership and Team Management: Strong advocate for fostering a collaborative and inclusive team environment.",
         "Prioritizes effective communication and teamwork to achieve project goals.",
-        "Project Management and Agile Methodologies: Proficient in Agile methodologies, including Scrum and Kanban."
+        "Project Management and Agile Methodologies: Proficient in Agile methodologies, including Scrum and Kanban.",
+        "Conducted code reviews and provided mentorship to junior developers, enhancing team skills and code quality.",
+        "Implemented CI/CD pipelines to streamline deployment processes and improve release cycles."
       ],
-      technologies: ["React", "Node.js", "AWS", "MongoDB", "MySQL", "Postgre SQL", "Microsoft 365", "Admin Handling", "Client Handling"]
+      technologies: [
+        "React", 
+        "Node.js", 
+        "AWS", 
+        "MongoDB", 
+        "MySQL", 
+        "PostgreSQL", 
+        "Microsoft 365", 
+        "Admin Handling", 
+        "Client Handling",
+        "PHP", 
+        "CodeIgniter", 
+        "Laravel", 
+        "RESTful APIs", 
+        "OAuth", 
+        "JWT"
+      ]
     },
     {
       company: "Flipkart",
       role: "System Engineer",
       period: "2018 - 2019",
+      image: "/images/flipkart.png", // Replace with the actual path to your image
       description: [
-        "Expertise in diagnosing system issues and automating routine tasks to improve operational efficiency and reduce downtime."
+        "Expertise in diagnosing system issues and automating routine tasks to improve operational efficiency and reduce downtime.",
+        "Collaborated with cross-functional teams to enhance system performance and reliability.",
+        "Developed and maintained documentation for system processes and procedures.",
+        "Assisted in the implementation of new technologies and tools to optimize workflows.",
+        "Provided technical support and training to staff on system usage and best practices."
       ],
-      technologies: ["Microsoft Office", "Tally","Hardware Handling","Store Management"]
+      technologies: [
+        "Microsoft Office", 
+        "Tally", 
+        "Hardware Handling", 
+        "Store Management",
+        "PHP", 
+        "CodeIgniter", 
+        "Laravel", 
+        "MySQL", 
+        "RESTful APIs", 
+        "Version Control (Git)"
+      ]
     }
   ];
 
@@ -46,14 +80,14 @@ export function Experience() {
           {experiences.map((exp, index) => (
             <div key={index} className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition">
               <div className="flex items-start">
-                <Building2 className="h-6 w-6 text-indigo-600 mt-1" />
+                <img src={exp.image} alt={exp.company} className="h-12 w-12 rounded-full mr-4" /> {/* Company Image */}
                 <div className="ml-4">
                   <h3 className="text-xl font-semibold text-gray-900">{exp.role}</h3>
                   <p className="text-gray-600">{exp.company} • {exp.period}</p>
 
                   {/* Initial Bullet points for the description */}
                   <ul className="mt-2 text-gray-700 list-disc list-inside">
-                    {exp.description.slice(0, 3).map((desc, idx) => (
+                    {exp.description.slice(0, 3 ).map((desc, idx) => (
                       <li key={idx} dangerouslySetInnerHTML={{ __html: desc }} />
                     ))}
                   </ul>
