@@ -57,13 +57,7 @@ export function Experience() {
         "Microsoft Office", 
         "Tally", 
         "Hardware Handling", 
-        "Store Management",
-        "PHP", 
-        "CodeIgniter", 
-        "Laravel", 
-        "MySQL", 
-        "RESTful APIs", 
-        "Version Control (Git)"
+        "Store Management"
       ]
     }
   ];
