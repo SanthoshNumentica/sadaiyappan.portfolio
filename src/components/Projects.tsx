@@ -91,7 +91,7 @@ export function Projects() {
                     className="flex items-center text-gray-600 hover:text-indigo-600"
                   >
                     <ExternalLink className="h-5 w-5 mr-1" />
-                    Live Demo
+                    Live Website
                   </a>
                 </div>
               </div>
