@@ -13,6 +13,7 @@ export function Header() {
           <nav className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-700 hover:text-indigo-600">About</a>
             <a href="#experience" className="text-gray-700 hover:text-indigo-600">Experience</a>
+            <a href="#skills" className="text-gray-700 hover:text-indigo-600">Skills</a>
             <a href="#projects" className="text-gray-700 hover:text-indigo-600">Projects</a>
             <a href="#certifications" className="text-gray-700 hover:text-indigo-600">Certifications</a>
           </nav>
