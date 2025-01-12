@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { Projects } from './components/Projects';
 import Skills from './components/Skill';
 import Testimonials from './components/Testimonials';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <Certifications/>
         <Testimonials/>
+        <SpeedInsights />
       </main>
       <Footer />
     </div>
