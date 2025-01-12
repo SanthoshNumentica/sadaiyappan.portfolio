@@ -74,15 +74,15 @@ export function Header() {
                 <Github className="h-5 w-5" />
               </button>
               <button
-  onClick={() => handleIconClick('https://www.hackerrank.com/profile/sadaiyappancse', 'hackerrank')}
-  className={`focus:outline-none ${activeIcon === 'hackerrank' ? 'text-indigo-600' : 'text-gray-700'} hover:text-indigo-600`}
->
-  <img
-    src="images/hr.png"  // Path to your PNG file
-    alt="HackerRank"
-    className="h-5 w-5"  // Adjust the size as needed
-  />
-</button>
+                onClick={() => handleIconClick('https://www.hackerrank.com/profile/sadaiyappancse', 'hackerrank')}
+                className={`focus:outline-none ${activeIcon === 'hackerrank' ? 'text-indigo-600' : 'text-gray-700'} hover:text-indigo-600`}
+              >
+                <img
+                  src="images/hr.png"  // Path to your PNG file
+                  alt="HackerRank"
+                  className="h-5 w-5"  // Adjust the size as needed
+                />
+              </button>
 
               <button
                 onClick={() => handleIconClick('https://www.linkedin.com/in/sadaiyappan-subramani-7186a61b1/', 'linkedin')}

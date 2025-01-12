@@ -10,13 +10,13 @@ export function Footer() {
             <span className="font-bold text-lg text-white">Sadaiyappan Subramani</span>
           </div>
           <div className="flex space-x-4 mt-2 md:mt-0">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/SanthoshNumentica" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 text-gray-400 hover:text-white" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sadaiyappan-subramani-7186a61b1/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-white" />
             </a>
-            <a href="mailto:john@example.com">
+            <a href="mailto:sadaiyappancse@gmail.com">
               <Mail className="h-5 w-5 text-gray-400 hover:text-white" />
             </a>
           </div>
