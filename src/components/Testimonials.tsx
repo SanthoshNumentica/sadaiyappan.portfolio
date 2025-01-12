@@ -3,37 +3,54 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const testimonialsData = [
   {
-    id: 1,
-    name: "Dr.Ben John",
-    position: "Founder of ",
-    company :"ITOI",
-    testimonial: "You are doing really well. Focus on the work and you will come out as a strong leader",
-    link: "https://itoi.org", 
-  },
+    "id": 1,
+    "name": "Dr.Ben John",
+    "position": "Founder of ",
+    "company": "ITOI",
+    "testimonial": "You are doing really well. Focus on the work and you will come out as a strong leader. Keep learning, stay curious, and never hesitate to embrace challenges. Success comes to those who remain dedicated and persistent.",
+    "link": "https://itoi.org"
+},
   {
-    id: 2,
-    name: "David Associates",
-    company :"David Associates",
-    position: "Founder of ",
-    testimonial: "This designer transformed our brand and helped us reach new heights!",
-    link: "https://www.davidassociates.in",
-  },
+    i: 2,
+    name: "Austin Vinoth",
+    company: "ITOI",
+    position: "Head of Nagercoil ",
+    testimonial: "It's always a pleasure to work with you! Your dedication and availability to address work challenges stand out. Even clients appreciate your prompt problem-solving skills, and I am confident you will reach great heights in your career.",
+    link: "https://zealcorps.com/"
+  }, 
   {
-    id: 3,
-    name: "Dr.Joephin Soundar",
-    position: "Founder of ",
-    company :"SIDENT",
-    testimonial: "An exceptional talent! Their attention to detail is unmatched.",
-    link :"https://sident.in"
-  },
-  {
-    id: 4,
-    name: "Dr.Joffin",
-    company:"Indian Association of Oral Implantologists (IAOI)",
-    position: "Director of ",
-    testimonial: "A pleasure to work with! They brought our vision to life.",
-    link:"https://iaoi.in/"
-  },
+    "id": 3,
+    "name": "David Associates",
+    "company": "David Associates ",
+    "position": "Founder of",
+    "testimonial": "This designer transformed our brand and helped us reach new heights! Their creativity and attention to detail are unmatched. We have seen significant growth and stronger customer engagement thanks to their exceptional work.",
+    "link": "https://www.davidassociates.in"
+},
+{
+  "id": 4,
+  "name": "Dr.Joephin Soundar",
+  "position": "Founder of ",
+  "company": "SIDENT",
+  "testimonial": "An exceptional talent! Their attention to detail is unmatched. They consistently exceed expectations and deliver high-quality results that resonate with the audience.",
+  "link": "https://sident.in"
+},
+{
+  "id": 5,
+  "name": "Dr.Joffin",
+  "company": "Indian Association of Oral Implantologists (IAOI)",
+  "position": "Director of ",
+  "testimonial": "A pleasure to work with! They brought our vision to life with creativity and professionalism. Their insights and expertise made a significant impact on our projects.",
+  "link": "https://iaoi.in/"
+},
+{
+  "id": 6,
+  "name": "Jothi",
+  "company": "Zealcorps ",
+  "position": "Head of Operations ",
+  "testimonial": "It's a pleasure to work with! I can see your dedication, always available to address issues and resolve them promptly. Your proactive approach and problem-solving skills are truly commendable. I would love to have someone like you in my office.",
+  "link": "https://zealcorps.com/"
+}
+     
 ];
 
 const Testimonials = () => {
