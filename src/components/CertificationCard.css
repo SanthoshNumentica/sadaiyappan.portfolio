@@ -13,3 +13,28 @@
     height: auto;
     border-radius: 4px;
 }
+/* Add this to your global styles */
+@keyframes gradientAnimation {
+    0% {
+      background: rgb(255, 0, 0); /* Red */
+    }
+    25% {
+      background: rgb(0, 255, 0); /* Green */
+    }
+    50% {
+      background: rgb(0, 0, 255); /* Blue */
+    }
+    75% {
+      background: rgb(255, 165, 0); /* Orange */
+    }
+    100% {
+      background: rgb(255, 0, 255); /* Purple */
+    }
+  }
+  
+  .hover\:animate-gradient:hover {
+    animation: gradientAnimation 3s ease-in-out infinite;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
