@@ -47,15 +47,15 @@ const testimonialsData = [
       "A pleasure to work with! They brought our vision to life with creativity and professionalism. Their insights and expertise made a significant impact on our projects.",
     link: "https://iaoi.in/",
   },
-  {
-    id: 6,
-    name: "Jothi",
-    position: "Head of Operations ",
-    company: "Zealcorps",
-    testimonial:
-      "It's a pleasure to work with! I can see your dedication, always available to address issues and resolve them promptly. Your proactive approach and problem-solving skills are truly commendable. I would love to have someone like you in my office.",
-    link: "https://zealcorps.com/",
-  },
+  // {
+  //   id: 6,
+  //   name: "Jothi",
+  //   position: "Head of Operations ",
+  //   company: "Zealcorps",
+  //   testimonial:
+  //     "It's a pleasure to work with! I can see your dedication, always available to address issues and resolve them promptly. Your proactive approach and problem-solving skills are truly commendable. I would love to have someone like you in my office.",
+  //   link: "https://zealcorps.com/",
+  // },
 ];
 
 const Testimonials = () => {

@@ -41,7 +41,7 @@ export function Header() {
     setActiveSection(section);
   };
 
-  const sections = ['about', 'experience', 'skills', 'projects', 'certifications'];
+  const sections = ['about', 'Career Highlights', 'skills', 'projects', 'certifications'];
 
   return (
     <>

@@ -68,9 +68,9 @@ export function Experience() {
   };
 
   return (
-    <section id="experience" className="py-16 bg-white">
+    <section id="Career Highlights" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Work Experience</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Career Highlights</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition">
