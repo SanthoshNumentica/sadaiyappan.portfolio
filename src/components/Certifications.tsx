@@ -4,6 +4,13 @@ import React from "react";
 export function Certifications() {
   const certifications = [
     {
+      "name": "Microsoft Copilot AI",
+      "credential": "https://learn.microsoft.com/api/achievements/share/en-us/SadaiyappanSubramani-2018/WZLWYTFN?sharingId=932536458A20472B",
+      "organization": "Microsoft",
+      "date": "January 2025",
+      "image": "images/copilot.jpg",
+      "description": "Earned the Microsoft Copilot Certification, showcasing proficiency in leveraging AI-powered tools to enhance productivity and automate workflows. Gained expertise in utilizing Microsoft Copilot to streamline tasks and integrate AI solutions seamlessly into business processes. Demonstrates strong skills in AI-driven innovation and automation."
+    },{
       "name": "Microsoft Power BI Desktop for Business Intelligence",
       "credential": "https://www.udemy.com/certificate/UC-657bec8f-c61d-4fc7-810d-21472de5bec1",
       "organization": "Udemy",
