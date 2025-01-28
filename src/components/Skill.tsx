@@ -28,6 +28,7 @@ import {
   SiGit,
   SiJest,
   SiMysql,
+  SiKoa,
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -51,8 +52,8 @@ const Skills = () => {
     { id: 14, skill: 'PostgreSQL', icon: <SiPostgresql className="h-6 w-6 inline mr-2 text-blue-700" />, description: 'Utilized PostgreSQL for relational database management and complex queries.' },
     { id: 18, skill: 'MySQL', icon: <SiMysql className="h-6 w-6 inline mr-2 text-red-500" />, description: 'JavaScript testing framework used for unit and integration testing.' },
     { id: 15, skill: 'MongoDB', icon: <SiMongodb className="h-6 w-6 inline mr-2 text-green-600" />, description: 'Used MongoDB for NoSQL database solutions in various applications.' },
-    { id : 16, skill: 'Git', icon: <SiGit className="h-6 w-6 inline mr-2 text-orange-500" />, description: 'Version control system for tracking changes in source code during software development.' },
-    { id: 17, skill: 'Jest', icon: <SiJest className="h-6 w-6 inline mr-2 text-red-500" />, description: 'JavaScript testing framework used for unit and integration testing.' },
+    { id :16,skill: 'Git', icon: <SiGit className="h-6 w-6 inline mr-2 text-orange-500" />, description: 'Version control system for tracking changes in source code during software development.' },
+    { id: 17, skill: 'KOA',icon: <SiKoa className="h-6 w-6 inline mr-2 text-green-500" />, description: 'Minimalist Node.js web framework designed for building robust APIs and web applications.',}
   ];
 
   const softSkills = [
