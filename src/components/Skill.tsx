@@ -35,7 +35,7 @@ const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
   const technicalSkills = [
-    { id: 1, skill: 'Power BI', icon: <FaChartBar className="h-6 w-6 inline mr-2 text-yellow-500" />,  description: 'Created dynamic dashboards and reports for data analysis and visualization.'},
+    { id: 1, skill: 'Power BI', icon: <FaChartBar className="h-6 w-6 inline mr-2 text-yellow-500" />, description: 'Created dynamic dashboards and reports for data analysis and visualization.' },
     { id: 1, skill: 'JavaScript', icon: <FaJsSquare className="h-6 w-6 inline mr-2 text-yellow-500" />, description: 'Used extensively in frontend and backend development, including building dynamic web applications.' },
     { id: 2, skill: 'TypeScript', icon: <SiTypescript className="h-6 w-6 inline mr-2 text-blue-600" />, description: 'Implemented in projects to enhance type safety and scalability in complex applications.' },
     { id: 3, skill: 'Java', icon: <SiBuymeacoffee className="h-6 w-6 inline mr-2 text-red-600" />, description: 'Developed backend APIs and enterprise-level applications using Java.' },
@@ -52,8 +52,9 @@ const Skills = () => {
     { id: 14, skill: 'PostgreSQL', icon: <SiPostgresql className="h-6 w-6 inline mr-2 text-blue-700" />, description: 'Utilized PostgreSQL for relational database management and complex queries.' },
     { id: 18, skill: 'MySQL', icon: <SiMysql className="h-6 w-6 inline mr-2 text-red-500" />, description: 'JavaScript testing framework used for unit and integration testing.' },
     { id: 15, skill: 'MongoDB', icon: <SiMongodb className="h-6 w-6 inline mr-2 text-green-600" />, description: 'Used MongoDB for NoSQL database solutions in various applications.' },
-    { id :16,skill: 'Git', icon: <SiGit className="h-6 w-6 inline mr-2 text-orange-500" />, description: 'Version control system for tracking changes in source code during software development.' },
-    { id: 17, skill: 'KOA',icon: <SiKoa className="h-6 w-6 inline mr-2 text-green-500" />, description: 'Minimalist Node.js web framework designed for building robust APIs and web applications.',}
+    { id: 16, skill: 'Git', icon: <SiGit className="h-6 w-6 inline mr-2 text-orange-500" />, description: 'Version control system for tracking changes in source code during software development.' },
+    { id: 17, skill: 'Jest', icon: <SiJest className="h-6 w-6 inline mr-2 text-red-500" />, description: 'JavaScript testing framework used for unit and integration testing.', },
+    { id: 18, skill: 'KOA', icon: <SiKoa className="h-6 w-6 inline mr-2 text-green-500" />, description: 'Minimalist Node.js web framework designed for building robust APIs and web applications.', },
   ];
 
   const softSkills = [
