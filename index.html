@@ -202,7 +202,7 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<span class="subheading">Skills</span>
 					<h2 class="mb-4">My Skills</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
 				</div>
 			</div>
 			<div class="row progress-circle mb-5">
@@ -400,8 +400,8 @@
 			<div class="row justify-content-center">
 				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
 					<span class="subheading">I am grat at</span>
-					<h2 class="mb-4">We do awesome services for our clients</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<h2 class="mb-4">I do awesome services for our clients</h2>
+					<p>Our client services make me feel good and motivate me.</p>
 				</div>
 			</div>
 
@@ -753,32 +753,32 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<span class="subheading">Contact Us</span>
 					<h2 class="mb-4">Have a Project?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
 				</div>
 			</div>
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+					<form action="send_mail.php" method="POST" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input type="text" name="name" class="form-control" placeholder="Your Name" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Email">
+									<input type="email" name="email" class="form-control" placeholder="Your Email" required>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Subject">
+									<input type="text" name="subject" class="form-control" placeholder="Subject" required>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+									<textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
@@ -788,6 +788,7 @@
 							</div>
 						</div>
 					</form>
+					
 					
 				</div>
 
