@@ -759,35 +759,65 @@
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form action="send_mail.php" method="POST" class="bg-light p-4 p-md-5 contact-form">
+					<form id="contactForm" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" name="name" class="form-control" placeholder="Your Name" required>
+									<input type="text" id="name" class="form-control" placeholder="Your Name" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="email" name="email" class="form-control" placeholder="Your Email" required>
+									<input type="email" id="email" class="form-control" placeholder="Your Email" required>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" name="subject" class="form-control" placeholder="Subject" required>
+									<input type="text" id="subject" class="form-control" placeholder="Subject" required>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+									<textarea id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+									<button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
 								</div>
 							</div>
 						</div>
 					</form>
+					
+					<script>
+					document.getElementById("contactForm").addEventListener("submit", async function(event) {
+						event.preventDefault();
+					
+						const data = {
+							from: "Acme <onboarding@resend.dev",
+							to: "sadaiyappancse@gmail.com",
+							subject: document.getElementById("subject").value,
+							html: `<p><strong>Name:</strong> ${document.getElementById("name").value}</p>
+								   <p><strong>Email:</strong> ${document.getElementById("email").value}</p>
+								   <p><strong>Message:</strong> ${document.getElementById("message").value}</p>`
+						};
+					
+						const response = await fetch("https://api.resend.com/emails", {
+							method: "POST",
+							headers: {
+								"Authorization": "re_123456789",
+								"Content-Type": "application/json"
+							},
+							body: JSON.stringify(data)
+						});
+					
+						if (response.ok) {
+							alert("Email sent successfully!");
+						} else {
+							alert("Failed to send email.");
+						}
+					});
+					</script>
 					
 					
 				</div>
